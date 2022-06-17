@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @tommagnusson86
+- 👋 Hi, I’m @Theseal86
 - 👀 I’m interested in CAD, CAM, Postprocessors, Coding
 - 🌱 I’m currently learning Python and Three.js
 - 💞️ I’m looking to collaborate on nothing
