@@ -1,0 +1,120 @@
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/loaders/STLLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js"></script>
+  <script>
+  
+    // Set up the STL loader
+    //var loader = new THREE.STLLoader();
+
+    // Load the STL file
+    //loader.load('C:\Users\tomma\OneDrive\Documents\Min hemsida\mugg.stl', function (geometry) {
+    // Create a mesh from the geometry and material
+    //var material = new THREE.MeshLambertMaterial({ color: 0x00ff00 });
+    //var mesh = new THREE.Mesh(geometry, material);
+
+    // Set up the scene, camera, and renderer
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = -15;
+    var renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Set up the controls
+    var controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enablePan = true;
+    controls.enableZoom = true;
+
+    //Add Light
+    var light = new THREE.PointLight(0xffffff, 1, 100);
+    light.position.set(0, 0, 0);
+    scene.add(light);
+
+    // Add the mesh to the scene
+    //scene.add(mesh);
+  //});
+  
+
+    // Create a sphere
+    var sphereGeometry = new THREE.SphereGeometry(0.01, 0.01, 0.01);
+    var sphereMaterial = new THREE.MeshBasicMaterial({
+      color: 0x00990099,
+      transparent: true
+    });
+
+    // Set up the terrain geometry
+    const width = 10;
+    const height = 10;
+    const segments = 10;
+    const planeGeometry = new THREE.PlaneGeometry(10, 10, 10, 10);
+    const planeMaterial = new THREE.MeshBasicMaterial({ color: 0x00FFCC99 });
+    const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    plane.position.x = 0;
+    plane.position.y = -4.5;
+    plane.position.z = 0;
+    plane.rotation.x = Math.PI / -2;
+    scene.add(plane);
+
+
+    // Set up the raindrop array
+    var raindrops = [];
+
+
+    // Animate the raindrops
+    function animate() {
+      requestAnimationFrame(animate);
+      
+
+    // Update the controls
+    controls.update();
+
+      // Create a new raindrop at a random position
+    for (var i = 0; i < 12; i++) { // Create 10 raindrops on each frame
+      var raindrop = new THREE.Mesh(sphereGeometry, sphereMaterial);
+      raindrop.position.x = Math.random() * 23 - 12;
+      raindrop.position.y = 4.5;
+      raindrop.position.z = Math.random() * 23 - 12;
+      scene.add(raindrop);
+      raindrops.push(raindrop);
+    }
+
+
+      // Update the position of each raindrop
+      for (var i = 0; i < raindrops.length; i++) {
+        raindrops[i].position.y -= 0.02;
+        raindrops[i].rotation.x += 0.01;
+        raindrops[i].rotation.y += 0.01;
+
+        // Remove the raindrop if it falls below the bottom of the screen
+        if (raindrops[i].position.y < -5) {
+          scene.remove(raindrops[i]);
+          raindrops.splice(i, 1);
+          i--;
+        }
+      }
+
+      //Update the camera position
+      //camera.position.z += 0.01; // Move the camera forward by decreasing the z position
+      //console.log(camera.position);
+      //camera.rotation.y += 0.001;
+
+      renderer.render(scene, camera);
+
+     
+    }
+    animate();
+  </script>
+</body>
+</html>
