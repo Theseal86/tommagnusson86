@@ -1,0 +1,10 @@
+{
+  "name": "tom-magnusson-portfolio-samples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Selected deterministic code samples from personal integration and AI projects",
+  "scripts": {
+    "test": "node --test projects/pizzeria-voice-agent/tests/order-engine.test.mjs projects/evidencelayer/tests/evidence-builder.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": "pizza_vesuvio",
+      "name": "Vesuvio",
+      "priceSek": 110,
+      "ingredients": ["tomatsås", "ost", "skinka"],
+      "removableIngredients": ["tomatsås", "ost", "skinka"],
+      "allowedExtras": ["extra_cheese", "topping_mushrooms", "topping_onion", "topping_kebab_meat"],
+      "available": true
+    },
+    {
+      "id": "pizza_kebab",
+      "name": "Kebabpizza",
+      "priceSek": 135,
+      "ingredients": ["tomatsås", "ost", "kebabkött", "lök", "feferoni", "kebabsås"],
+      "removableIngredients": ["tomatsås", "ost", "kebabkött", "lök", "feferoni", "kebabsås"],
+      "allowedExtras": ["extra_cheese", "topping_mushrooms", "topping_onion", "topping_kebab_meat"],
+      "available": true
+    },
+    {
+      "id": "drink_coke_33",
+      "name": "Coca-Cola 33 cl",
+      "priceSek": 25,
+      "ingredients": [],
+      "removableIngredients": [],
+      "allowedExtras": [],
+      "available": true
+    }
+  ],
+  "extras": [
+    {"id": "extra_cheese", "name": "extra ost", "aliases": ["extra ost", "mer ost", "dubbel ost"], "priceSek": 15, "available": true},
+    {"id": "topping_mushrooms", "name": "extra champinjoner", "aliases": ["champinjon", "champinjoner", "extra champinjoner", "svamp"], "priceSek": 15, "available": true},
+    {"id": "topping_onion", "name": "extra lök", "aliases": ["lök", "extra lök", "mer lök", "gul lök"], "priceSek": 10, "available": true},
+    {"id": "topping_kebab_meat", "name": "extra kebabkött", "aliases": ["kebabkött", "extra kebabkött", "mer kebabkött"], "priceSek": 30, "available": true}
+  ]
+}
