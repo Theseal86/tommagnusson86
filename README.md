@@ -2,7 +2,7 @@
 
 ### Enterprise integrations · Data migration · Applied AI
 
-Technical consultant based in **Vaggeryd, Sweden**. My professional work focuses on connecting business systems, resolving data problems and building migration tooling. My personal work spans voice agents, AI-assisted analysis, multi-model development workflows and **ChromaDrop, a complete Android app awaiting production release**.
+Technical consultant based in **Vaggeryd, Sweden**. My professional work focuses on connecting business systems, resolving data problems and building migration tooling. My personal work spans voice agents, AI-assisted analysis, multi-model development workflows and **ChromaDrop, a complete Android app published on Google Play**.
 
 I use AI-assisted development extensively, alongside hands-on debugging, testing and iteration. I am particularly interested in what happens around the model: context, business rules, external APIs, failure handling and human review. My ElevenLabs experience includes both **voice-agent speech integration and game-audio generation**, with Python tooling for batch audio production.
 
@@ -13,13 +13,13 @@ I use AI-assisted development extensively, alongside hands-on debugging, testing
 | Project | What it demonstrates | Start here |
 | --- | --- | --- |
 | **Swedish AI voice receptionist** | OpenAI Realtime, ElevenLabs and Twilio connected to an order workflow with server-controlled pricing | [Case study and runnable order-engine sample](projects/pizzeria-voice-agent/) |
-| **ChromaDrop** | End-to-end Android app development, closed testing and release preparation; ElevenLabs used for game audio. **Awaiting production release.** | [App-delivery case study](projects/chromadrop/) |
+| **ChromaDrop** | End-to-end Android app development, closed testing and publication; ElevenLabs used for game audio. **Published on Google Play.** | [Google Play](https://play.google.com/store/apps/details?id=com.restlessworks.chromadrop) · [App-delivery case study](projects/chromadrop/) |
 | **ElevenLabs game-audio tooling** | Python API automation for sound effects/music: batch selection, retries, downloads and Godot-format conversion | [Case study, Python transport excerpt and offline tests](projects/elevenlabs-game-audio/) |
 | **AI Development Team / AI Team Coordinator** | OpenAI, Gemini and Grok working with project context, review feedback and human-controlled code changes | [Case study and provider-route sample](projects/ai-team-coordinator/) |
 | **EvidenceLayer** | Blockchain-data investigation and AI-assisted reporting built around structured evidence | [Case study and runnable evidence-packaging sample](projects/evidencelayer/) |
 | **AI Shield** | Text/image analysis for explaining possible scam and manipulation signals | [Source and project overview](https://github.com/Theseal86/ai-shield) |
 
-**This is a curated public portfolio, not a mirror of every development repository.** Project pages distinguish complete applications, prototypes, case studies and source excerpts. The full development applications remain private; the samples do not launch the complete voice agent, game, dashboard or development workbench. No live credentials, customer records or private working-directory backups are included in the portfolio samples.
+**This is a curated public portfolio, not a mirror of every development repository.** Project pages distinguish published applications, prototypes, case studies and source excerpts. The full development applications remain private; the samples do not launch the complete voice agent, game, dashboard or development workbench. ChromaDrop itself is available through the Google Play link above. No live credentials, customer records or private working-directory backups are included in the portfolio samples.
 
 ## Try the code samples
 
