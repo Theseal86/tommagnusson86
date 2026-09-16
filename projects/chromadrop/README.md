@@ -1,14 +1,16 @@
-# ChromaDrop — Android puzzle app
+# ChromaDrop — published Android puzzle app
 
-**A complete mobile game taken from concept to a production-ready Android app, awaiting production release.**
+**A complete mobile game taken from concept through development, closed testing and publication on Google Play.**
 
 Developed by **Tom Magnusson** · Godot · Android · ElevenLabs-generated game audio
 
-**Release status — 13 September 2026:** development and closed testing have progressed to production release preparation. The app is awaiting production release and is not yet publicly launched. This status reflects my current development/release position, not a claim that Google Play has already approved or published it.
+**Status: Published on Google Play.**
+
+[View ChromaDrop on Google Play](https://play.google.com/store/apps/details?id=com.restlessworks.chromadrop)
 
 ## What I built
 
-ChromaDrop is a portrait colour-sort puzzle with a gravity-flip mechanic. The project covers more than a playable mechanic: gameplay, level progression, saved state, onboarding, assistance tools, audio, advertising integration, Android packaging and release preparation.
+ChromaDrop is a portrait colour-sort puzzle with a gravity-flip mechanic. The project covers more than a playable mechanic: gameplay, level progression, saved state, onboarding, assistance tools, audio, advertising integration, Android packaging and app-store publication.
 
 Classic and Zen provide different play conditions and separate progression. The game includes hints, assisted solving, undo/restart and fixed campaigns followed by endless play. My development work has included testing and debugging the complete application rather than stopping at a concept demo.
 
@@ -16,10 +18,10 @@ Classic and Zen provide different play conditions and separate progression. The 
 
 - Developed and iterated on the gameplay, interface and progression systems.
 - Integrated audio assets into the game and checked the resulting playback.
-- Worked through Android builds, closed testing and release-candidate preparation.
+- Took the application through Android builds, closed testing and Google Play publication.
 - Added application-level concerns such as save handling, tutorials and advertising configuration.
 
-The engineering value of this project is bringing many interacting parts together in a usable mobile application and carrying it through a release workflow.
+The engineering value of this project is bringing many interacting parts together in a usable mobile application and carrying it through to a public release.
 
 ## ElevenLabs during development
 
@@ -29,10 +31,10 @@ My [Python game-audio generation tooling](../elevenlabs-game-audio/) is another 
 
 ## AI-assisted development
 
-I use AI-assisted implementation alongside hands-on testing, debugging and iteration. My role spans the product direction, integration of the components, diagnosing failures and preparing the app for release.
+I use AI-assisted implementation alongside hands-on testing, debugging and iteration. My role spans the product direction, integration of the components, diagnosing failures and taking the app through release.
 
 ## Public scope
 
-This page is a case study, not the complete game source or an app-store download. Signing material, private configuration and game-development repositories remain private. Public source samples for other projects are available from the portfolio; a ChromaDrop store link can be added after release.
+The published app is available through the Google Play link above. This repository page is a case study, not the complete game source. Signing material, private configuration and game-development repositories remain private. Public source samples for other projects are available from the portfolio.
 
 [Back to portfolio](../../README.md)
